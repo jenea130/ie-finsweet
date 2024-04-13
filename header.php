@@ -28,7 +28,7 @@
         <?php endif; ?>
       </div>
       <?php wp_nav_menu([
-        'theme_location'  => 'menu-1',
+        'theme_location'  => 'header',
         'menu'            => '',
         'container'       => '',
         'container_class' => '',
