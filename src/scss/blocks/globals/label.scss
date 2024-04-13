@@ -1,0 +1,22 @@
+.label {
+  position: relative;
+  padding-left: 9.6rem;
+  font-family: var(--font-1);
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-color-dark);
+  &::before {
+    content: "";
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-2px);
+    width: 70px;
+    height: 2px;
+    background: var(--text-color-dark);
+  }
+}

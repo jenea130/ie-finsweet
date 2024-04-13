@@ -7,7 +7,6 @@
     display: block;
     width: 36rem;
     padding: 2rem;
-    // height: 100%;
     background: #fff;
     z-index: 1000;
     opacity: 0;
@@ -18,7 +17,6 @@
   &.fixed {
     opacity: 1;
     pointer-events: initial;
-    // transform: scale(1);
     transform: translateX(0);
   }
   li {
@@ -29,7 +27,7 @@
     }
     &:last-of-type {
       a {
-        background: #1d2130;
+        background: var(--text-color-dark);
         border-radius: 0.4rem;
         margin-left: 2rem;
         padding: 1.2rem 3.2rem;

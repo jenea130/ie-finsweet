@@ -11,11 +11,11 @@
     background: var(--accent-hover);
   }
   &.btn--white {
-    color: #1d2130;
+    color: var(--text-color-dark);
     background: #fff;
     &:hover {
       color: #fff;
-      background: #1d2130;
+      background: var(--text-color-dark);
     }
   }
 }
