@@ -90,6 +90,10 @@ p {
   max-width: 1310px;
 }
 
+.shift {
+  margin-left: 9.6rem;
+}
+
 input[type="submit"]:disabled {
   cursor: not-allowed !important;
   opacity: 0.6 !important;
@@ -123,12 +127,12 @@ button::-moz-focus-inner {
   overflow: hidden;
 
   // Прижимаем footer
-  >main {
+  > main {
     flex: 1 1 auto;
   }
 
   // Фикс для слайдеров
-  >* {
+  > * {
     min-width: 0;
   }
 }
