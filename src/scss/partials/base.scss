@@ -21,8 +21,9 @@ body {
   position: relative;
   margin: 0;
   padding-top: 97px;
+  padding-bottom: 500vh;
   font-family: var(--font-1);
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: var(--text-color);
   background: white;
 
@@ -31,10 +32,10 @@ body {
     position: absolute;
     top: 0;
     left: 50%;
-    display: none;
+    // display: none;
     width: 1px;
     height: 100%;
-    background-color: yellow;
+    background-color: green;
     z-index: 1000;
   }
 
@@ -86,7 +87,7 @@ p {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 1400px;
+  max-width: 1310px;
 }
 
 input[type="submit"]:disabled {
@@ -113,6 +114,8 @@ button::-moz-focus-inner {
 }
 
 .wrapper {
+  max-width: 1500px;
+  margin: 0 auto;
   width: 100%;
   min-height: 100%;
   display: flex;
