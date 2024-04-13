@@ -18,9 +18,6 @@
   @media screen and (max-width: 1400px) {
     justify-content: flex-start;
   }
-  @media screen and (max-width: 1200px) {
-    padding: 0 6rem;
-  }
   @media screen and (max-width: 992px) {
     height: 8rem;
   }
@@ -48,9 +45,9 @@
   }
   &__main-menu {
     position: relative;
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 768px) {
       position: fixed;
-      top: 0;
+      top: 9rem;
       left: 0;
     }
   }
@@ -70,9 +67,9 @@
   }
   &__sandwich {
     display: none;
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 768px) {
       position: absolute;
-      top: 1.2rem;
+      top: 0rem;
       right: 30px;
       display: inline-flex;
       justify-content: center;
