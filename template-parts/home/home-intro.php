@@ -15,6 +15,7 @@ $text_right = $home_intro['text_right'];
       <a href="<?php echo get_the_permalink(10); ?>" class="btn btn--white"><?php echo $button_text; ?></a>
       <footer class="home-intro__footer">
         <div class="home-intro__text"><?php echo $text_left; ?></div>
+        <div class="home-intro__line"></div>
         <div class="home-intro__text"><?php echo $text_right; ?></div>
       </footer>
     </div>

@@ -1,5 +1,15 @@
 .home-intro {
   position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 50%);
+    z-index: 2;
+  }
   &__img {
     position: absolute;
     top: 0;
@@ -16,6 +26,10 @@
   &__content {
     padding-top: 12.9rem;
     padding-bottom: 6.4rem;
+    @media screen and (max-width: 576px) {
+      padding-top: 10rem;
+      padding-bottom: 3.2rem;
+    }
   }
   &__title {
     margin-bottom: 4.8rem;
@@ -24,29 +38,49 @@
     font-size: 6.4rem;
     line-height: 1.2;
     color: #fff;
+    @media screen and (max-width: 768px) {
+      font-size: 4.8rem;
+    }
   }
   .btn {
     margin-bottom: 19.2rem;
+    @media screen and (max-width: 576px) {
+    margin-bottom: 10rem;
+    }
   }
   &__footer {
-    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    &::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 48.7%;
-      transform: translate(-50%, -50%);
-      width: 86.1rem;
-      height: 1px;
-      background: #e5e5e5;
+    @media screen and (max-width: 576px) {
+      display: block;
     }
+  }
+  &__line {
+    flex: 1;
+    height: 1px;
+    background: #e5e5e5;
+    // @media screen and (max-width: 1200px) {
+    //   // width: 70vw;
+    //   width: 68%;
+    // }
   }
   &__text {
     font-weight: 500;
     font-size: 1.8rem;
     color: #fff;
+    &:first-of-type {
+      padding-right: 3rem;
+      @media screen and (max-width: 576px) {
+        padding-bottom: 1rem;
+      }
+    }
+    &:last-of-type {
+      padding-left: 3rem;
+      @media screen and (max-width: 576px) {
+        text-align: right;
+        padding-top: 1rem;
+      }
+    }
   }
 }
