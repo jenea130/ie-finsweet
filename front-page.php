@@ -6,7 +6,10 @@
 get_header();
 ?>
 <?php get_template_part('template-parts/home/home-intro'); ?>
-<?php get_template_part('template-parts/home/nature'); ?>
-<?php get_template_part('template-parts/home/logos'); ?>
+<div class="container">
+  <?php get_template_part('template-parts/home/nature'); ?>
+  <?php get_template_part('template-parts/home/logos'); ?>
+</div>
+  <?php get_template_part('template-parts/home/care'); ?>
 
 <?php get_footer(); ?>
