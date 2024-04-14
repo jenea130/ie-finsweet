@@ -6,18 +6,21 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 add_action( 'init', 'my_custom_init' );
 function my_custom_init() {
-	register_post_type( 'servizi', array(
+
+	$label = 'Project Card';
+
+	register_post_type( 'project_card', array(
 		'labels'             => array(
-			'name'              => 'Servizi', // Основное название типа записи
-			'singular_name'     => 'Servizi', // отдельное название записи типа Book
-			'add_new'           => __( 'Aggiungi Servizi' ),
-			'add_new_item'      => __( 'Aggiungi Servizi' ),
-			'edit_item'         => __( 'Modifica Servizi' ),
-			'new_item'          => __( 'Nuova Servizi' ),
-			'view_item'         => __( 'Vedi' ),
-			'search_items'      => __( 'Cerca' ),
+			'name'              => $label, // Основное название типа записи
+			'singular_name'     => $label, // отдельное название записи типа Book
+			'add_new'           => __( 'Add New' ),
+			'add_new_item'      => __( 'Add New' ),
+			'edit_item'         => __( 'Edit' ),
+			'new_item'          => __( 'New' ),
+			'view_item'         => __( 'View' ),
+			'search_items'      => __( 'Search' ),
 			'parent_item_colon' => '',
-			'menu_name'         => 'Servizi'
+			'menu_name'         => $label
 		),
 		'public'             => true,
 		'publicly_queryable' => true,
@@ -30,6 +33,6 @@ function my_custom_init() {
 		'hierarchical'       => false,
 		'menu_position'      => 20,
 		'menu_icon'          => 'dashicons-admin-home',
-		'supports'           => array( 'title', 'thumbnail' )
+		'supports'           => array( 'title', 'thumbnail', 'excerpt' )
 	) );
 }
