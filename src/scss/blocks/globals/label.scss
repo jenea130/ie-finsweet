@@ -7,6 +7,9 @@
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--text-color-dark);
+  @media screen and (max-width: 992px) {
+    padding-left: 0;
+  }
   &::before {
     content: "";
     padding: 0;
@@ -18,5 +21,8 @@
     width: 70px;
     height: 2px;
     background: var(--text-color-dark);
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
   }
 }

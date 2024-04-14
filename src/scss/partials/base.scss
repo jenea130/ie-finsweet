@@ -91,7 +91,10 @@ p {
 }
 
 .shift {
-  margin-left: 9.6rem;
+  padding-left: 9.6rem;
+  @media screen and (max-width: 992px) {
+    padding-left: 0;
+  }
 }
 
 input[type="submit"]:disabled {

@@ -12,5 +12,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width: 992px) {
+      flex-wrap: wrap;
+      // column-gap: 4rem;
+      gap: 4rem;
+      justify-content: flex-start;
+    }
   }
 }
