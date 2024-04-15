@@ -28,7 +28,7 @@
   &__items {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.6rem 2.4rem;
+    gap: 1.6rem 2.6rem;
   }
   &__item {
     display: flex;
@@ -73,8 +73,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 18rem;
-    height: 18rem;
+    width: 20rem;
+    height: 20rem;
     background: #0b0706;
     border-radius: 50%;
     z-index: 2;
