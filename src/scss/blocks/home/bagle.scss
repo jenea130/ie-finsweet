@@ -7,17 +7,29 @@
 
   padding: 9.6rem 0;
   background: #0b0706;
+  @media screen and (max-width: 576px) {
+    padding-top: 7rem;
+  }
   &__wrap {
     display: flex;
+    column-gap: 2rem;
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
   }
   &__content {
     padding-top: 4.6rem;
     flex: 1;
-    width: 37.5rem;
-    height: 37.5rem;
+    @media screen and (max-width: 768px) {
+      padding-top: 0;
+    }
   }
   &__body {
     max-width: 64rem;
+    @media screen and (max-width: 768px) {
+      text-align: center;
+      margin: 0 auto;
+    }
   }
   &__title {
     margin-bottom: 1.6rem;
@@ -51,6 +63,13 @@
   &__round {
     position: relative;
     z-index: 1;
+    @media screen and (max-width: 768px) {
+      display: inline-block;
+      top: 4rem;
+      margin: 0 auto;
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
   }
   &__block {
     position: relative;
