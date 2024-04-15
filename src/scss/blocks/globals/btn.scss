@@ -7,6 +7,7 @@
   background: var(--accent);
   transition: all 0.3s ease;
   border-radius: 0.4rem;
+  border: none;
   &:hover {
     background: var(--accent-hover);
   }

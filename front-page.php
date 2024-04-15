@@ -15,5 +15,8 @@ get_header();
   <?php get_template_part('template-parts/home/projects'); ?>
 </div>
 <?php get_template_part('template-parts/home/bagle'); ?>
+<div class="container">
+  <?php get_template_part('template-parts/home/contribute'); ?>
+</div>
 
 <?php get_footer(); ?>
