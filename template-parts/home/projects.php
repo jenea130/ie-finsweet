@@ -8,7 +8,7 @@ $button_text = $projects['button_text'];
 <?php
 $card_posts = new WP_Query([
   'post_type' => 'project_card',
-  'posts_per_page' => -1
+  'posts_per_page' => 3
 ]);
 ?>
 <div class="projects">
