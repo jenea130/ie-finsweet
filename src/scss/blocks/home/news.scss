@@ -2,6 +2,10 @@
   margin-bottom: 9.6rem;
   &__title {
     margin-bottom: 4.8rem;
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 1.4;
+    color: var(--text-color-dark);
   }
   &__wrap {
     display: flex;
@@ -15,7 +19,7 @@
   &__img {
     margin-bottom: 1.6rem;
     position: relative;
-    padding-bottom: 70%;
+    padding-bottom: 63%;
     img {
       position: absolute;
       top: 0;
@@ -24,7 +28,7 @@
       height: 100%;
       object-fit: cover;
       border-radius: 0.8rem;
-      transition: all .5s ease;
+      transition: all 0.5s ease;
     }
   }
   &__subtitle {
