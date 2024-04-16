@@ -36,4 +36,33 @@ function my_custom_init()
 		'menu_icon'          => 'dashicons-admin-home',
 		'supports'           => array('title', 'thumbnail', 'excerpt')
 	));
+	
+	$label = 'Events';
+
+	register_post_type('events', array(
+		'labels'             => array(
+			'name'              => $label, // Основное название типа записи
+			'singular_name'     => $label, // отдельное название записи типа Book
+			'add_new'           => __('Add Event'),
+			'add_new_item'      => __('Add Event'),
+			'edit_item'         => __('Edit'),
+			'new_item'          => __('Event'),
+			'view_item'         => __('View'),
+			'search_items'      => __('Search'),
+			'parent_item_colon' => '',
+			'menu_name'         => $label
+		),
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => true,
+		'capability_type'    => 'post',
+		'has_archive'        => false,
+		'hierarchical'       => false,
+		'menu_position'      => 20,
+		'menu_icon'          => 'dashicons-admin-home',
+		'supports'           => array('title', 'thumbnail', 'excerpt')
+	));
 }

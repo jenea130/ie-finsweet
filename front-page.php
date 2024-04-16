@@ -18,6 +18,7 @@ get_header();
 <div class="container">
   <?php get_template_part('template-parts/home/contribute'); ?>
   <?php get_template_part('template-parts/home/news'); ?>
+  <?php get_template_part('template-parts/home/events'); ?>
 </div>
 
 <?php get_footer(); ?>
