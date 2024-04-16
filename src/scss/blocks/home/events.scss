@@ -26,7 +26,7 @@
       row-gap: 2.4rem;
     }
     @media screen and (max-width: 576px) {
-    display: block;
+      display: block;
     }
   }
   &__item {
@@ -115,16 +115,26 @@
     height: 5.6rem;
     background: #fff;
     border-radius: 50%;
+    cursor: pointer;
+    transition: all .3s ease;
     @media screen and (max-width: 480px) {
       top: 10%;
       right: 3.8rem;
       transform: initial;
+    }
+    &:hover {
+      background: var(--text-color-dark);
+    }
+    &:hover svg {
+      fill: #fff;
     }
     svg {
       position: relative;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      fill: #1d2130;
+      transition: all .3s ease;
     }
   }
 }
