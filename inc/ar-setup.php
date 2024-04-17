@@ -43,6 +43,8 @@ if (!function_exists('ar_starter_setup')) :
 		register_nav_menus(
 			array(
 				'header' => esc_html__('Header', 'ie-finsweet'),
+				'our-team' => esc_html__('Our Team', 'ie-finsweet'),
+				'more' => esc_html__('More', 'ie-finsweet'),
 			)
 		);
 

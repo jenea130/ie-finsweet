@@ -1,0 +1,77 @@
+.main-footer {
+  padding: 9.6rem 0;
+  background: #0b0706;
+  &__wrap {
+    display: flex;
+  }
+  &__logo {
+    margin-right: 11.7rem;
+  }
+  &__column + .main-footer__column {
+    margin-left: 8.9rem;
+  }
+  &__subscribe {
+    margin-left: 14.4rem;
+    flex: 1;
+  }
+  &__title {
+    margin-bottom: 2.4rem;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #fff;
+  }
+  &__link {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #fff;
+    opacity: 0.78;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__item:not(:last-of-type) {
+    margin-bottom: 2.4rem;
+  }
+  h3.main-footer__title {
+    margin-bottom: 3.4rem;
+    max-width: 50rem;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 1.4;
+    color: #fff;
+  }
+  &__group {
+    display: flex;
+    height: 6.4rem;
+    width: 100%;
+  }
+  &__input {
+    flex: 1;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: rgba(235, 240, 249, 0.6);
+    text-indent: 2.2rem;
+    border: 1px solid rgba(235, 240, 249, 0.3);
+    outline: none;
+    border-radius: 4px 0 0 4px;
+    background: #0b0706;
+    &::placeholder {
+      font-weight: 400;
+      font-size: 1.6rem;
+      color: rgba(235, 240, 249, 0.3);
+      opacity: 0.8;
+    }
+  }
+  &__btn {
+    padding: 1.6rem 3.2rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-align: right;
+    color: var(--text-color-dark);
+    border-radius: 0 4px 4px 0;
+    border: none;
+    outline: none;
+  }
+}
