@@ -16,14 +16,19 @@ $event_posts = new WP_Query([
       <?php while ($event_posts->have_posts()) : ?>
         <?php $event_posts->the_post(); ?>
         <?php
+        $single_event = get_field('single_event');
+        $date = $single_event['date'];
+        $our_date = new DateTimeImmutable($date);
+        $day = $our_date->format('d');
+        $month = $our_date->format('M');
         $title = get_the_title();
         $permalink = get_the_permalink();
         ?>
         <div class="events__item">
           <div class="events__body">
             <div class="events__data">
-              <div class="events__number">25</div>
-              <span class="events__month">sep</span>
+              <div class="events__number"><?php echo $day; ?></div>
+              <span class="events__month"><?php echo $month; ?></span>
             </div>
             <div class="events__content">
               <span class="events__next">Next Events</span>

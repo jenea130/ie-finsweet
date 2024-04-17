@@ -21,14 +21,19 @@
     line-height: 1.6;
     color: #fff;
   }
-  &__link {
-    font-weight: 400;
-    font-size: 1.4rem;
-    line-height: 1.6;
-    color: #fff;
-    opacity: 0.78;
-    &:hover {
-      text-decoration: underline;
+  &__list {
+    li:not(:last-of-type) {
+      margin-bottom: 2.4rem;
+    }
+    a {
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 1.6;
+      color: #fff;
+      opacity: 0.78;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
   &__item:not(:last-of-type) {
@@ -73,5 +78,10 @@
     border-radius: 0 4px 4px 0;
     border: none;
     outline: none;
+    transition: all 0.3s ease;
+    &:hover {
+      color: #fff;
+      background: var(--accent);
+    }
   }
 }

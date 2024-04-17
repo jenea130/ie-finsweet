@@ -53,6 +53,9 @@
     }
   }
   &__data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     @media screen and (max-width: 480px) {
       margin-bottom: 1rem;
     }
@@ -69,6 +72,7 @@
     }
   }
   &__month {
+    padding-left: 0.2rem;
     font-weight: 500;
     font-size: 1.6rem;
     letter-spacing: 0.12em;

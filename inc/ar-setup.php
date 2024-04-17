@@ -45,6 +45,7 @@ if (!function_exists('ar_starter_setup')) :
 				'header' => esc_html__('Header', 'ie-finsweet'),
 				'our-team' => esc_html__('Our Team', 'ie-finsweet'),
 				'more' => esc_html__('More', 'ie-finsweet'),
+				'socials' => esc_html__('Socials', 'ie-finsweet'),
 			)
 		);
 

@@ -7,54 +7,66 @@
       </a>
       <div class="main-footer__column">
         <h4 class="main-footer__title">Our team</h4>
-        <ul class="main-footer__list">
-          <li class="main-footer__item">
-            <a class="main-footer__link" href="#">About us</a>
-          </li>
-          <li class="main-footer__item">
-            <a class="main-footer__link" href="#">Team</a>
-          </li>
-          <li class="main-footer__item">
-            <a class="main-footer__link" href="#">What we do</a>
-          </li>
-          <li class="main-footer__item">
-            <a class="main-footer__link" href="#">Contact</a>
-          </li>
-        </ul>
+        <?php wp_nav_menu([
+          'theme_location'  => 'our-team',
+          'menu'            => '',
+          'container'       => '',
+          'container_class' => '',
+          'container_id'    => '',
+          'menu_class'      => 'main-footer__list',
+          'menu_id'         => '',
+          'echo'            => true,
+          'fallback_cb'     => 'wp_page_menu',
+          'before'          => '',
+          'after'           => '',
+          'link_before'     => '',
+          'link_after'      => '',
+          'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+          'depth'           => 0,
+          'walker'          => '',
+        ]); ?>
       </div>
       <div class="main-footer__column">
         <h4 class="main-footer__title">More</h4>
-        <ul class="main-footer__list">
-          <li class="main-footer__item">
-            <a class="main-footer__link" href="#">Projects</a>
-          </li>
-          <li class="main-footer__item">
-            <a class="main-footer__link" href="#">Events</a>
-          </li>
-          <li class="main-footer__item">
-            <a class="main-footer__link" href="#">Donate</a>
-          </li>
-          <li class="main-footer__item">
-            <a class="main-footer__link" href="#">Blog</a>
-          </li>
-        </ul>
+        <?php wp_nav_menu([
+          'theme_location'  => 'more',
+          'menu'            => '',
+          'container'       => '',
+          'container_class' => '',
+          'container_id'    => '',
+          'menu_class'      => 'main-footer__list',
+          'menu_id'         => '',
+          'echo'            => true,
+          'fallback_cb'     => 'wp_page_menu',
+          'before'          => '',
+          'after'           => '',
+          'link_before'     => '',
+          'link_after'      => '',
+          'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+          'depth'           => 0,
+          'walker'          => '',
+        ]); ?>
       </div>
       <div class="main-footer__column">
         <h4 class="main-footer__title">Connect </h4>
-        <ul class="main-footer__list">
-          <li class="main-footer__item">
-            <a class="main-footer__link" href="#">Facebook</a>
-          </li>
-          <li class="main-footer__item">
-            <a class="main-footer__link" href="#">Instagram</a>
-          </li>
-          <li class="main-footer__item">
-            <a class="main-footer__link" href="#">Twitter</a>
-          </li>
-          <li class="main-footer__item">
-            <a class="main-footer__link" href="#">Linkdin </a>
-          </li>
-        </ul>
+        <?php wp_nav_menu([
+          'theme_location'  => 'socials',
+          'menu'            => '',
+          'container'       => '',
+          'container_class' => '',
+          'container_id'    => '',
+          'menu_class'      => 'main-footer__list',
+          'menu_id'         => '',
+          'echo'            => true,
+          'fallback_cb'     => 'wp_page_menu',
+          'before'          => '',
+          'after'           => '',
+          'link_before'     => '',
+          'link_after'      => '',
+          'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+          'depth'           => 0,
+          'walker'          => '',
+        ]); ?>
       </div>
       <div class="main-footer__subscribe">
         <h3 class="main-footer__title">Subscribe to get latest updates</h3>
