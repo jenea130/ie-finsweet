@@ -1,5 +1,8 @@
 .awards {
   margin-bottom: 9.6rem;
+  @media screen and (max-width: 576px) {
+    margin-bottom: 7rem;
+  }
   &__title {
     margin-bottom: 5.1rem;
     text-align: center;
@@ -7,6 +10,10 @@
   &__wrap {
     display: flex;
     justify-content: space-around;
+    @media screen and (max-width: 768px) {
+      flex-wrap: wrap;
+      gap: 4rem;
+    }
   }
   &__item {
     text-align: center;
