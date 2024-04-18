@@ -1,5 +1,14 @@
 .logos {
-  margin-bottom: 6.4rem;
+  padding-bottom: 6.4rem;
+  &--color {
+    margin-bottom: 9.6rem;
+    padding-bottom: 9.4rem;
+    background: #eff7f2;
+    .logos__title {
+      margin-bottom: 4.9rem;
+    }
+  }
+
   &__title {
     margin-bottom: 3.2rem;
     font-size: 1.6rem;

@@ -1,0 +1,39 @@
+.awards {
+  margin-bottom: 9.6rem;
+  &__title {
+    margin-bottom: 5.1rem;
+    text-align: center;
+  }
+  &__wrap {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__item {
+    text-align: center;
+  }
+  &__logo {
+    margin-bottom: 1rem;
+  }
+  &__year {
+    margin-bottom: 0.4rem;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1.6;
+    color: var(--text-color-dark);
+  }
+  &__subtitle {
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: var(--text-color-dark);
+  }
+  &__country {
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-transform: uppercase;
+    color: var(--text-color-dark);
+    opacity: 0.6;
+  }
+}
