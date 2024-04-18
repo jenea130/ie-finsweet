@@ -1,0 +1,30 @@
+.mission {
+  position: relative;
+  padding-top: 31.8rem;
+  padding-bottom: 9.6rem;
+  margin-top: -22rem;
+  z-index: 1;
+  background: #eff7f2;
+  &__wrap {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  &__item {
+    flex: 0 0 49.6rem;
+  }
+  &__label {
+    margin-bottom: 1.6rem;
+    font-weight: 700;
+    font-size: 1.6rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-color-dark);
+  }
+  &__title {
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 1.5;
+    color: var(--text-color-dark);
+  }
+}
