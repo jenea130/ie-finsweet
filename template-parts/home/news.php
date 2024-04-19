@@ -1,5 +1,5 @@
 <?php
-$news = get_field('news');
+$news = get_field('news', 2);
 $title = $news['title'];
 
 $posts = new WP_Query([

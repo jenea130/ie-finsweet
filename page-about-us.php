@@ -10,6 +10,8 @@
   <?php get_template_part('template-parts/about-us/journey'); ?>
   <?php get_template_part('template-parts/about-us/team'); ?>
   <?php get_template_part('template-parts/home/contribute'); ?>
+  <?php get_template_part('template-parts/home/news'); ?>
+  <?php get_template_part('template-parts/home/events'); ?>
 </div>
 
 <?php get_footer(); ?>

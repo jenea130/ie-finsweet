@@ -1,5 +1,5 @@
 <?php
-$events = get_field('events');
+$events = get_field('events', 2);
 $title = $events['title'];
 
 $event_posts = new WP_Query([
