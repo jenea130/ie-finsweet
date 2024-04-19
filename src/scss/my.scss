@@ -17,6 +17,7 @@
 @import "blocks/globals/label";
 @import "blocks/globals/text";
 @import "blocks/globals/card";
+@import "blocks/globals/main-title";
 
 // Home page
 @import "blocks/home/home-intro";
@@ -38,3 +39,6 @@
 @import "blocks/about-us/awards";
 @import "blocks/about-us/journey";
 @import "blocks/about-us/team";
+
+// What we do
+@import "blocks/what-we-do/working";
