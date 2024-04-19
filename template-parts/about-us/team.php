@@ -7,6 +7,10 @@ $team_posts = new WP_Query([
   'post_type' => 'our_team',
   'posts_per_page' => 8
 ]);
+$terms = get_terms([
+  'taxonomy' => 'occupation',
+  'hide_empty' => false,
+]);
 ?>
 
 <div class="team">
@@ -18,13 +22,10 @@ $team_posts = new WP_Query([
         <?php $team_posts->the_post(); ?>
         <?php
         $title = get_the_title();
-        $permalink = get_the_permalink();
-        // $for_loop = get_field('for_loop');
         $image = get_the_post_thumbnail_url();
-        // $text = $for_loop['text'];
-        // $socials = $for_loop['socials'];
-        // $cur_terms = get_the_terms(get_the_ID(), 'job');
-        // $term_name = $cur_terms[0]->name;
+        $for_loop = get_field('for_loop');
+        $socials = $for_loop['socials'];
+        $terms = get_the_terms(get_the_ID(), 'occupation');
         ?>
         <div class="team__item">
           <div class="team__img">
@@ -32,18 +33,28 @@ $team_posts = new WP_Query([
           </div>
           <div class="team__body">
             <h3 class="team__name"><?php echo $title; ?></h3>
-            <div class="team__cat">some text</div>
-            <ul class="team__socials">
-              <li class="team__icon">
-                <?php get_template_part('template-parts/icons/icon-facebook'); ?>
-              </li>
-              <li class="team__icon">
-                <?php get_template_part('template-parts/icons/icon-twitter'); ?>
-              </li>
-              <li class="team__icon">
-                <?php get_template_part('template-parts/icons/icon-linkedin'); ?>
-              </li>
-            </ul>
+            <?php foreach ($terms as $item) : ?>
+              <?php
+              $term = $item->name;
+              ?>
+              <span class="team__cat"><?php echo $term; ?></span>
+            <?php endforeach; ?>
+            <?php if ($socials) : ?>
+              <ul class="team__socials">
+                <?php foreach ($socials as $item) : ?>
+                  <?php
+                  $url = $item['url'];
+                  $type = $item['type'];
+                  $icon_url = 'template-parts/icons/icon-' . $type;
+                  ?>
+                  <li class="team__icon">
+                    <a href="<?php echo $url; ?>" class="team__link">
+                      <?php get_template_part($icon_url); ?>
+                    </a>
+                  </li>
+                <?php endforeach; ?>
+              </ul>
+            <?php endif; ?>
           </div>
         </div>
       <?php endwhile; ?>

@@ -58,6 +58,7 @@
     color: var(--text-color-dark);
   }
   &__cat {
+    display: inline-block;
     margin-bottom: 1.5rem;
     font-weight: 500;
     font-size: 1.2rem;
