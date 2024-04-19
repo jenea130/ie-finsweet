@@ -14,10 +14,24 @@
     flex-wrap: wrap;
     margin: 0 -1.6rem;
     row-gap: 3.2rem;
+    @media screen and (max-width: 576px) {
+      display: block;
+    }
   }
   &__item {
     flex: 0 0 calc(100% / 4 - 3.2rem);
     margin: 0 1.6rem;
+    @media screen and (max-width: 992px) {
+      flex: 0 0 calc(100% / 3 - 3.2rem);
+    }
+    @media screen and (max-width: 768px) {
+      flex: 0 0 calc(100% / 2 - 3.2rem);
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .team__item:not(:last-of-type) {
+      margin-bottom: 3.2rem;
+    }
   }
   &__img {
     position: relative;
