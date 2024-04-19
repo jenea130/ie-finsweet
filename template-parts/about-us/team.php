@@ -7,10 +7,6 @@ $team_posts = new WP_Query([
   'post_type' => 'our_team',
   'posts_per_page' => 8
 ]);
-$terms = get_terms([
-  'taxonomy' => 'occupation',
-  'hide_empty' => false,
-]);
 ?>
 
 <div class="team">
@@ -33,12 +29,21 @@ $terms = get_terms([
           </div>
           <div class="team__body">
             <h3 class="team__name"><?php echo $title; ?></h3>
-            <?php foreach ($terms as $item) : ?>
+            <?php
+            $count_terms = count($terms);
+            $term = '';
+            ?>
+            <?php foreach ($terms as $key => $item) : ?>
               <?php
-              $term = $item->name;
+              $comma = '';
+              if ($count_terms > 1 && $key !== $count_terms - 1) {
+                $comma = ", ";
+              }
+              $term .= $item->name . $comma;
               ?>
-              <span class="team__cat"><?php echo $term; ?></span>
+
             <?php endforeach; ?>
+            <span class="team__cat"><?php echo $term; ?></span>
             <?php if ($socials) : ?>
               <ul class="team__socials">
                 <?php foreach ($socials as $item) : ?>
