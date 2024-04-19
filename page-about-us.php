@@ -9,6 +9,7 @@
   <?php get_template_part('template-parts/about-us/awards'); ?>
   <?php get_template_part('template-parts/about-us/journey'); ?>
   <?php get_template_part('template-parts/about-us/team'); ?>
+  <?php get_template_part('template-parts/home/contribute'); ?>
 </div>
 
 <?php get_footer(); ?>

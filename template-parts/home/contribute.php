@@ -1,5 +1,5 @@
 <?php
-$contribute = get_field('contribute');
+$contribute = get_field('contribute', 2);
 $title = $contribute['title'];
 $image = $contribute['image'];
 $button_text_1 = $contribute['button_text_1'];
