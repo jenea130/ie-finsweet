@@ -1,6 +1,9 @@
 .environment {
   padding: 9.6rem 0 10.4rem;
   background: var(--bg-color-accent);
+  @media screen and (max-width: 576px) {
+    padding: 6rem 0;
+  }
   &__title {
     margin-bottom: 6.4rem;
   }
@@ -10,12 +13,23 @@
     flex-wrap: wrap;
     margin: 0 -3.2rem;
     row-gap: 5rem;
+    @media screen and (max-width: 576px) {
+      display: block;
+    }
   }
   &__item {
     flex: 0 0 calc(100% / 3 - 6.4rem);
     margin: 0 3.2rem;
     display: flex;
     column-gap: 2.4rem;
+    @media screen and (max-width: 992px) {
+      flex: 0 0 calc(100% / 2 - 6.4rem);
+    }
+  }
+  @media screen and (max-width: 576px) {
+    &__item:not(:last-of-type) {
+      margin-bottom: 4rem;
+    }
   }
   &__subtitle {
     margin-bottom: 0.8rem;

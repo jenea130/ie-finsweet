@@ -3,6 +3,9 @@
   @media screen and (max-width: 992px) {
     margin-top: 4rem;
   }
+  @media screen and (max-width: 576px) {
+    margin: 6rem 0;
+  }
   &__wrap {
     display: flex;
     flex-direction: row-reverse;
