@@ -25,6 +25,9 @@
     font-size: 4rem;
     line-height: 1.4;
     color: var(--text-color-dark);
+    @media screen and (max-width: 440px) {
+      width: 70%;
+    }
   }
   &__text {
     margin-bottom: 3.2rem;
