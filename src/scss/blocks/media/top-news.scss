@@ -1,12 +1,20 @@
 .top-news {
   padding: 9.6rem 0;
   background: var(--bg-color-accent);
+  @media screen and (max-width: 576px) {
+    padding-top: 6rem;
+  }
   &__wrap {
     display: flex;
-    // column-gap: 8rem;
+    @media screen and (max-width: 992px) {
+      display: block;
+    }
   }
   &__content {
     flex: 0 0 53.8%;
+    @media screen and (max-width: 992px) {
+      margin-bottom: 4rem;
+    }
   }
   &__body {
     max-width: 87%;
@@ -28,6 +36,10 @@
     gap: 2.2rem;
     background: #fff;
     border-radius: 1.2rem;
+    @media screen and (max-width: 576px) {
+      padding: 0;
+      background: var(--bg-color-accent);
+    }
   }
   &__item {
     display: flex;
@@ -51,7 +63,10 @@
   }
   &__right {
     flex: 0 0 60.3%;
-    padding-right: 2rem;
+    padding-right: 1.8rem;
+    @media screen and (max-width: 1200px) {
+      padding-right: 0;
+    }
   }
   &__subtitle {
     margin-bottom: 0.8rem;
