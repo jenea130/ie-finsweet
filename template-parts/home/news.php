@@ -1,6 +1,10 @@
 <?php
 $news = get_field('news', 2);
 $title = $news['title'];
+$text = $news['text'];
+$title_media = $news['title_media'];
+$class = is_page(12) ? 'news--center' : '';
+$title = is_page(12) ? $title_media : $title;
 
 $posts = new WP_Query([
   'post_type' => 'post',
@@ -8,8 +12,11 @@ $posts = new WP_Query([
 ]);
 ?>
 
-<div class="news">
+<div class="news <?php echo $class; ?>">
   <h2 class="news__title title"><?php echo $title; ?></h2>
+  <?php  if(is_page(12)): ?>
+    <div class="news__extra-text text"><?php echo $text; ?></div>
+  <?php endif;?>
   <div class="news__wrap">
     <?php if ($posts->have_posts()) : ?>
       <?php while ($posts->have_posts()) : ?>
