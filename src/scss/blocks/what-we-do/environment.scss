@@ -1,8 +1,10 @@
 .environment {
-  padding: 9.6rem 0 10.4rem;
+  padding: 9.6rem 0 10.2rem;
+  margin-bottom: 9.6rem;
   background: var(--bg-color-accent);
   @media screen and (max-width: 576px) {
     padding: 6rem 0;
+    margin-bottom: 6rem;;
   }
   &__title {
     margin-bottom: 6.4rem;

@@ -1,5 +1,18 @@
 .projects {
   margin-bottom: 9.8rem;
+  &.projects--environment {
+    .projects__label {
+      position: static;
+      margin-bottom: 1.6rem;
+      padding-left: 0;
+      text-align: center;
+    }
+    h2.projects__title {
+      margin: 0 auto 6.4rem;
+      padding-left: 0;
+      text-align: center;
+    }
+  }
   &__label {
     margin-bottom: 3.2rem;
   }
