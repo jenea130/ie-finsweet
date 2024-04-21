@@ -1,12 +1,21 @@
 .talk {
   padding: 9.6rem 0;
   background: var(--bg-color-accent);
+  @media screen and (max-width: 576px) {
+    padding: 6rem 0;
+  }
   &__wrap {
     display: flex;
     column-gap: 6.4rem;
+    @media screen and (max-width: 576px) {
+      display: block;
+    }
   }
   &__content {
     flex: 1;
+    @media screen and (max-width: 576px) {
+      margin-bottom: 4rem;
+    }
   }
   &__group {
   }
