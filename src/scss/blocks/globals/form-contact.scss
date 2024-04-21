@@ -1,10 +1,7 @@
-.form {
+.form-contact {
   &__wrap {
     display: flex;
     column-gap: 3.2rem;
-    @media screen and (max-width: 576px) {
-      display: block;
-    }
   }
   &__group {
     margin-bottom: 3.2rem;
@@ -20,6 +17,7 @@
     color: var(--text-color-dark);
     outline: none;
   }
+
   input {
     padding: 0.6rem;
     text-indent: 1.2rem;
@@ -47,5 +45,9 @@
     line-height: 1.6;
     color: var(--text-color);
     opacity: 0.6;
+  }
+  &__flex {
+    display: flex;
+    justify-content: center;
   }
 }

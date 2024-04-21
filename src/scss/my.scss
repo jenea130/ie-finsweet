@@ -20,6 +20,7 @@
 @import "blocks/globals/main-title";
 @import "blocks/globals/modal";
 @import "blocks/globals/form";
+@import "blocks/globals/form-contact";
 
 // Home page
 @import "blocks/home/home-intro";
@@ -51,3 +52,4 @@
 
 // Contact
 @import "blocks/contact/talk";
+@import "blocks/contact/contact-form";
