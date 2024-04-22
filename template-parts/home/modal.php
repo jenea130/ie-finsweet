@@ -1,7 +1,14 @@
+<?php 
+$popup = get_field('popup');
+$title = $popup['title'];
+$text = $popup['text'];
+$form = $popup['form'];
+?>
+
 <div class="modal">
   <div class="modal__inner">
-    <h3 class="modal__title">Join as a volunteer</h3>
-    <div class="modal__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen varius enim in eros elementum tristique.</div>
+    <h3 class="modal__title"><?php echo $title; ?></h3>
+    <div class="modal__text"><?php echo $text; ?></div>
     <div class="modal__form form">
       <form action="">
         <div class="form__wrap">
@@ -22,9 +29,7 @@
           <label for="">Message</label>
           <textarea placeholder="Type your Messege"></textarea>
         </div>
-        <div class="form-contact__flex">
-          <button class="btn form-contact__btn" type="submit">Send message</button>
-        </div>
+          <button class="btn" type="submit">Send message</button>
       </form>
     </div>
     <div class="modal__close">
