@@ -18,6 +18,9 @@
   @media screen and (max-width: 1400px) {
     justify-content: flex-start;
   }
+  &.main-header--color {
+    background: var(--bg-color-accent);
+  }
   &.active {
     position: fixed;
     top: 0;

@@ -22,7 +22,9 @@
           <label for="">Message</label>
           <textarea placeholder="Type your Messege"></textarea>
         </div>
-        <button class="btn" type="submit">Send message</button>
+        <div class="form-contact__flex">
+          <button class="btn form-contact__btn" type="submit">Send message</button>
+        </div>
       </form>
     </div>
     <div class="modal__close">
