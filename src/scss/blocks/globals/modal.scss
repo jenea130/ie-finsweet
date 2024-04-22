@@ -36,6 +36,11 @@
     line-height: 1.6;
     color: var(--text-color);
   }
+  &__form {
+    .form-contact__flex {
+      display: block;
+    }
+  }
   &__close {
     position: absolute;
     top: 2.4rem;

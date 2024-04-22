@@ -2,7 +2,7 @@ import "leaflet";
 
 export default function streetMap() {
     const coords = [45.42080767307064, 11.285030639883836];
-    const marker_url = 'bs-casa-helen';
+    const marker_url = 'ie-finsweet';
     const addressText = 'Sede Operativa: Via Giacomo Brodolini';
 
     let map = L.map('map').setView(coords, 17);
