@@ -1,6 +1,29 @@
 .columns {
-  &__col {
-    column-count: 3;
-    column-gap: 9.0rem;
+  margin-bottom: 9.6rem;
+  column-count: 3;
+  column-gap: 9rem;
+  @media screen and (max-width: 992px) {
+    column-gap: 6rem;
+  }
+  @media screen and (max-width: 768px) {
+    column-gap: 4rem;
+  }
+  @media screen and (max-width: 576px) {
+    column-count: 2;
+  }
+  @media screen and (max-width: 425px) {
+    column-count: 1;
+  }
+  .title {
+    margin-bottom: 4rem;
+  }
+  p:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  p {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: var(--text-color);
   }
 }
