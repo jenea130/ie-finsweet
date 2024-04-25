@@ -10,6 +10,8 @@ $items = $talk['items'];
 $footer = get_field('footer', 'option');
 $email = $footer['email'];
 $phone_number = $footer['phone_number'];
+$branch_address = $footer['branch_address'];
+$full_address = $footer['full_address'];
 ?>
 
 <div class="talk">
@@ -32,13 +34,11 @@ $phone_number = $footer['phone_number'];
         </div>
         <div class="talk__body">
           <h4 class="talk__subtitle-small"><?php echo $subtitle_2; ?></h4>
-          <span class="talk__address text">8 Brewery Drive, Hudson, NH 03051</span>
-          <span>USA</span>
+          <span class="talk__address text"><?php echo $full_address; ?></span>
         </div>
         <div class="talk__body">
           <h4 class="talk__subtitle-small"><?php echo $subtitle_3; ?></h4>
-          <span class="talk__address text">178 Marconi St., Venice, 34293</span>
-          <span>Italy</span>
+          <span class="talk__address text"><?php echo $branch_address; ?></span>
         </div>
         <div class="talk__socials">
           <?php foreach ($items as $item) : ?>

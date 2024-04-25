@@ -4,5 +4,6 @@
 <div class="container">
 
   <?php get_template_part('template-parts/donate/protect'); ?>
+  <?php get_template_part('template-parts/donate/columns'); ?>
 </div>
 <?php get_footer(); ?>
