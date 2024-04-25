@@ -1,0 +1,36 @@
+.tabs-protect {
+  p {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: var(--text-color);
+  }
+  p:not(:last-child) {
+    margin-bottom: 2.4rem;
+  }
+  &__nav {
+    display: inline-flex;
+    margin-bottom: 2.7rem;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  &__item {
+    padding: 1.9rem 1.5rem 1rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: var(--text-color-dark);
+    cursor: pointer;
+  }
+  &__item:not(:last-child) {
+    margin: 0 1rem;
+  }
+  &__item.active {
+    border-bottom: 2px solid var(--accent);
+  }
+  &__body {
+    display: none;
+  }
+  &__body.active {
+    display: block;
+  }
+}

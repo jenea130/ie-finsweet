@@ -9,6 +9,7 @@ $subtitle_3 = $talk['subtitle_3'];
 $items = $talk['items'];
 $footer = get_field('footer', 'option');
 $email = $footer['email'];
+$phone_number = $footer['phone_number'];
 ?>
 
 <div class="talk">
@@ -24,8 +25,10 @@ $email = $footer['email'];
       <div class="talk__info">
         <div class="talk__body">
           <h4 class="talk__subtitle"><?php echo $subtitle_1; ?></h4>
-          <a href="tel:" class="talk__phone text">+1 23 456 789</a>
-          <a href="mailto:hello@finsweet.com" class="talk__email text">hello@finsweet.com</a>
+          
+          <a href="tel:<?php echo clear_phone($phone_number); ?>" class="talk__phone text" target="_blank"><?php echo $phone_number; ?></a>
+          
+          <a href="mailto:<?php echo $email; ?>" class="talk__email text" target="_blank"><?php echo $email; ?></a>
         </div>
         <div class="talk__body">
           <h4 class="talk__subtitle-small"><?php echo $subtitle_2; ?></h4>

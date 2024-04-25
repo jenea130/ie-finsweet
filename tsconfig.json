@@ -19,7 +19,7 @@
     "src/**/*.ts",
     "src/**/*.vue",
     "shims-vue.d.ts"
-  ],
+, "src/js/modules/tabs.js"  ],
   "exclude": [
     "node_modules"
   ]
