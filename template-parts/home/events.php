@@ -35,9 +35,10 @@ $event_posts = new WP_Query([
               <h3 class="events__subtitle"><?php echo $title; ?></h3>
             </div>
           </div>
-          <div class="events__arrow">
+          
+          <a class="events__arrow" href="<?php echo $permalink; ?>">
             <?php get_template_part('template-parts/icons/icon-arrow'); ?>
-          </div>
+      </a>
         </div>
       <?php endwhile; ?>
       <?php wp_reset_postdata(); ?>

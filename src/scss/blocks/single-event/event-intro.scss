@@ -1,0 +1,22 @@
+.event-intro {
+  padding: calc(9.6rem + 6.7rem) 0 9.6rem;
+  background: var(--bg-color-accent);
+  &__title {
+    margin-bottom: 4.8rem;
+  }
+  &__wrap {
+    display: flex;
+    column-gap: 4.8rem;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    column-gap: 0.8rem;
+  }
+  &__info {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: var(--text-color-dark);
+  }
+}
