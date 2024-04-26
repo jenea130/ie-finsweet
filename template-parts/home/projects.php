@@ -26,13 +26,15 @@ $card_posts = new WP_Query([
           $image = get_the_post_thumbnail_url();
           $title = get_the_title();
           $excerpt = get_the_excerpt();
+          $permalink = get_the_permalink();
           ?>
           <div class="projects__item card">
             <img class="card__img" src="<?php echo $image; ?>" alt="">
             <div class="card__body">
               <h3 class="card__title"><?php echo $title; ?></h3>
               <div class="card__text"><?php echo $excerpt; ?></div>
-              <a href="#" class="card__btn btn btn--white"><?php echo $button_text; ?></a>
+              
+              <a href="<?php echo $permalink; ?>" class="card__btn btn btn--white"><?php echo $button_text; ?></a>
             </div>
           </div>
         <?php endwhile; ?>

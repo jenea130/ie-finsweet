@@ -27,7 +27,8 @@ $posts = new WP_Query([
         $permalink = get_the_permalink();
         $image = get_the_post_thumbnail_url();
         ?>
-        <a href="#" class="news__item">
+        
+        <a href="<?php echo $permalink; ?>" class="news__item">
           <div class="news__img">
             <img src="<?php echo $image; ?>" alt="">
           </div>

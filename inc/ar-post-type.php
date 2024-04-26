@@ -34,7 +34,7 @@ function my_custom_init()
 		'hierarchical'       => false,
 		'menu_position'      => 20,
 		'menu_icon'          => get_template_directory_uri() . '/assets/i/static/projects.png',
-		'supports'           => array('title', 'thumbnail', 'excerpt')
+		'supports'           => array('title', 'thumbnail', 'excerpt', 'editor')
 	));
 	
 	$label = 'Events';
