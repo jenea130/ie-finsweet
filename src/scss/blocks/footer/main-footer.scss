@@ -3,6 +3,9 @@
   background: #0b0706;
   &__wrap {
     display: flex;
+    @media screen and (max-width: 992px) {
+      flex-wrap: wrap;
+    }
   }
   &__logo {
     margin-right: 11.7rem;
@@ -13,6 +16,9 @@
   &__subscribe {
     margin-left: 14.4rem;
     flex: 1;
+    @media screen and (max-width: 992px) {
+      margin-left: 0;
+    }
   }
   &__title {
     margin-bottom: 2.4rem;
