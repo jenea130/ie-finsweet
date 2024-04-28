@@ -13,6 +13,14 @@
       text-align: center;
     }
   }
+  &.projects--single {
+    .label {
+      display: none;
+    }
+    .projects__title {
+      display: none;
+    }
+  }
   &__label {
     margin-bottom: 3.2rem;
   }

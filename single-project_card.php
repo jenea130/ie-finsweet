@@ -19,5 +19,9 @@ $title = $post->post_title;
     <?php endif; ?>
   </div>
 </div>
+<?php get_template_part('template-parts/single-project/plantation'); ?>
+<div class="container">
+  <?php get_template_part('template-parts/home/projects'); ?>
+</div>
 
 <?php get_footer(); ?>
