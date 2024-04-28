@@ -5,19 +5,40 @@
     display: flex;
     @media screen and (max-width: 992px) {
       flex-wrap: wrap;
+      row-gap: 4rem;
     }
   }
   &__logo {
     margin-right: 11.7rem;
+    @media screen and (max-width: 576px) {
+      flex: 0 0 100%;
+    }
   }
   &__column + .main-footer__column {
     margin-left: 8.9rem;
+    @media screen and (max-width: 576px) {
+   margin-left: 7rem; 
+    }
   }
   &__subscribe {
     margin-left: 14.4rem;
-    flex: 1;
     @media screen and (max-width: 992px) {
       margin-left: 0;
+    }
+  }
+  .column-2,
+  .column-3,
+  .column-4 {
+    @media screen and (max-width: 992px) {
+      flex: 1;
+    }
+  }
+  .column-5 {
+    @media screen and (max-width: 992px) {
+      flex: 0 0 100%;
+    }
+    @media screen and (max-width: 576px) {
+      flex: 0 0 100%;
     }
   }
   &__title {

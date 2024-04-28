@@ -2,10 +2,10 @@
   <div class="container">
     <div class="main-footer__wrap">
 
-      <a href="#" class="main-footer__logo">
+      <a href="#" class="main-footer__logo column-1">
         <?php get_template_part('template-parts/icons/logo-footer'); ?>
       </a>
-      <div class="main-footer__column">
+      <div class="main-footer__column column-2">
         <h4 class="main-footer__title">Our team</h4>
         <?php wp_nav_menu([
           'theme_location'  => 'our-team',
@@ -26,7 +26,7 @@
           'walker'          => '',
         ]); ?>
       </div>
-      <div class="main-footer__column">
+      <div class="main-footer__column column-3">
         <h4 class="main-footer__title">More</h4>
         <?php wp_nav_menu([
           'theme_location'  => 'more',
@@ -47,7 +47,7 @@
           'walker'          => '',
         ]); ?>
       </div>
-      <div class="main-footer__column">
+      <div class="main-footer__column column-4">
         <h4 class="main-footer__title">Connect </h4>
         <?php wp_nav_menu([
           'theme_location'  => 'socials',
@@ -68,7 +68,7 @@
           'walker'          => '',
         ]); ?>
       </div>
-      <div class="main-footer__subscribe">
+      <div class="main-footer__subscribe column-5">
         <h3 class="main-footer__title">Subscribe to get latest updates</h3>
         <div class="main-footer__group">
           <input class="main-footer__input" type="text" placeholder="Your email">
