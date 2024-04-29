@@ -17,7 +17,7 @@ $image = $nature['image'];
       <div class="nature__content shift">
         <h2 class="title nature__title"><?php echo $title; ?></h2>
         <div class="nature__text"><?php echo $text; ?></div>
-        <a href="" class="btn"><?php echo $button_text; ?></a>
+        <a href="<?php echo get_the_permalink(8); ?>" class="btn"><?php echo $button_text; ?></a>
       </div>
     </div>
   </div>
