@@ -13,7 +13,7 @@ $button_text_2 = $contribute['button_text_2'];
     <footer class="contribute__footer">
       <!-- <a href="" class="btn contribute__btn"><?php echo $button_text_1; ?></a> -->
       <button class="btn"><?php echo $button_text_1; ?></button>
-      <a href="" class="btn btn--white"><?php echo $button_text_2; ?></a>
+      <a href="<?php echo get_the_permalink(16); ?>" class="btn btn--white"><?php echo $button_text_2; ?></a>
     </footer>
   </div>
   <?php get_template_part('template-parts/home/modal'); ?>

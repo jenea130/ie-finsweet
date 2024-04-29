@@ -1,9 +1,11 @@
 import "leaflet";
 
 export default function streetMap() {
-    const coords = [45.42080767307064, 11.285030639883836];
+    // const coords = [45.42080767307064, 11.285030639883836];
+    const coords = [42.73098978413411, -71.42441090169454];
+
     const marker_url = 'ie-finsweet';
-    const addressText = 'Sede Operativa: Via Giacomo Brodolini';
+    const addressText = '8 Brewery Drive, Hudson, NH 03051 USA';
 
     let map = L.map('map').setView(coords, 17);
 
