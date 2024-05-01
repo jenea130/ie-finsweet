@@ -1,5 +1,5 @@
 <?php
-$popup = get_field('popup');
+$popup = get_field('popup', 2);
 $title = $popup['title'];
 $text = $popup['text'];
 $form = $popup['form'];

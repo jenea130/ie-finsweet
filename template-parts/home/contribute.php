@@ -11,8 +11,7 @@ $button_text_2 = $contribute['button_text_2'];
   <div class="contribute__content">
     <h2 class="contribute__title title title--white"><?php echo $title; ?></h2>
     <footer class="contribute__footer">
-      <!-- <a href="" class="btn contribute__btn"><?php echo $button_text_1; ?></a> -->
-      <button class="btn"><?php echo $button_text_1; ?></button>
+      <button class="btn contribute__btn"><?php echo $button_text_1; ?></button>
       <a href="<?php echo get_the_permalink(16); ?>" class="btn btn--white"><?php echo $button_text_2; ?></a>
     </footer>
   </div>
